@@ -1,0 +1,614 @@
+/* body sectioning */
+body {
+    font-family: Roboto,sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul, ol {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* list itmes to clear the style */
+li {
+    list-style: none;
+}
+
+
+/* anchor tags to clear the decoratio */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Topbar css section */
+
+.topbar {
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: solid 1px lightslategray;
+    position: fixed;
+    z-index: 2;
+    width: 99%;
+}
+
+
+.topbar_menu a {
+    padding: 10px;
+    position: relative;
+}
+
+
+
+.topbar_menu a::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+    top: 100%;
+    background-color: bisque;
+    transition: 0.5s;
+}
+
+
+.topbar_menu a:hover {
+    color: #007BFF;
+}
+
+
+.topbar_menu a:hover::after{
+    width: 100%;
+}
+
+
+.button {
+    padding: 10px 12px;
+    font-size: 20px;
+    border-radius: 25px;
+    background: linear-gradient(90deg, orange,yellow,orange);
+    border-width: 0px;
+}
+
+
+.button:hover {
+    background: linear-gradient(90deg, green, rgb(178, 253, 178), green);
+    color: aqua;    
+}
+ 
+/* topbar section ends */
+
+
+
+
+
+
+/* cards interface section starts */
+
+.card {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #fff;
+    padding: 120px 80px;
+    position: relative;
+    z-index: 1;
+}
+
+.card::before {
+    background-image: url('../images/banner-shap-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1; 
+    width: 400px;
+    opacity: 0.5;
+}
+
+
+.card_desc {
+    padding-right: 20px;
+    
+}
+
+.card_desc h1{
+    font-size: 35px;
+    line-height: 1.4;
+}
+
+
+.card_desc p{
+    font-size: 16px;
+    line-height: 1.4;
+    opacity: 0.5;
+}
+
+
+.card_image img{
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+.button-blue {
+    background:linear-gradient(90deg, blue, skyblue, blue);
+    font-size: 1rem;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 30px;
+    margin-top: 30px;
+    border-width: 0px;
+}
+
+.button-blue:hover {
+    background-color: skyblue;
+    color: chocolate;
+}
+
+/* cards interface section ends */
+
+
+
+/* about section starts */
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+    padding: 50px 80px;
+}
+
+
+.about_d {
+    display: flex;
+}
+
+.about_script {
+    padding-left: 20px;
+
+}
+
+
+.about_image {
+    background-image: url('../images/dots-dg.png');
+    background-repeat: no-repeat;
+    
+}
+
+.about_image img{
+    border-radius: 8px;
+    margin: 50px 20px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.about_desc {
+    padding-right: 30px;
+}
+
+.about_desc h1 {
+    font-size: 23px;
+    color: blue;    
+}
+
+.paragram {
+    opacity: 0.5;
+    line-height: 1.4;
+    color: #fff;
+    font-size: 16px;
+}
+
+.about_script h2{
+    font-size: 22px;
+    color: #fff;
+}
+
+.about_desc_image img {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+/* about section ends */
+
+
+
+
+/* courses section starts */
+.courses {
+    background-color: black;
+    color: #fff;
+    padding: 70px;
+}
+
+
+.main-heading {
+    text-align: center;
+    line-height: 0.7;
+}
+
+.main-heading h1{
+    font-size: 32px;
+}
+
+.main-heading h2 {
+    font-size: 16px;
+    color: blue;
+}
+
+
+.card_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+span {
+    color: blue;
+    font-weight: bold;
+}
+
+
+.card_descript {
+    background-color: blue;
+    margin: 10px;
+    padding: 10px 50px 0px 30px;
+    border-radius: 10px;
+}
+
+.card_descript h2{
+    color: #fff;
+    font-size: 23px;
+}
+
+.card_descript p {
+    line-height: 1.5;
+}
+
+
+.cards {
+    background-color: rgba(128, 128, 128, 0.216);
+    margin: 10px;
+    padding: 40px 30px;
+    border-radius: 10px;
+}
+
+.cards p{
+    font-size: small;
+    opacity: 0.7;
+    line-height: 1.4;
+}
+
+
+.mid_line {
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    
+}
+
+.mid_line p{
+    font-size: 23px;
+}
+
+.mid_line button {
+    font-size: 16px;
+    background: linear-gradient(90deg, orange,yellow,orange);
+    border-radius: 30px;
+    padding: 14px 20px;
+    margin: 10px;
+    color: #fff;
+    border-width: 0px;
+}
+
+.mid_line button:hover {
+    color: aqua;
+}
+/* courses section ends */
+
+
+
+
+
+
+/* aboutt history section starts */
+.whychoose {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba(10, 4, 4, 0.955);
+    color: #fff;
+    padding: 80px;
+}
+
+.why h1 {
+    font-size: 30px;
+}
+
+.why p{
+    font-size: 16px;
+    line-height: 1.5;
+    opacity: 0.6;
+    padding-right: 30px;
+}
+
+.why div span{
+    color: orange;
+}
+
+
+.why_desc h5{
+    font-size: 16px;
+    color: blue;
+}
+
+.why button {
+    background:linear-gradient(90deg, blue, skyblue, blue);
+    font-size: 1rem;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 30px;
+    border-width: 0px;
+    margin-top: 30px;
+}
+
+.why button:hover {
+    background-color: skyblue;
+    color: chocolate;
+}
+
+.card_color {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 60px;
+}
+
+.cardss {
+    text-align: center;
+    margin: 10px;   
+    padding: 10px 0px;
+    color: #fff;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 7px;
+    background-color: black;
+}
+
+.cardss-one-six {
+    border-bottom: solid 5px rgb(217, 184, 238);
+}
+
+.cardss-three {
+    border-bottom: solid 5px rgb(185, 133, 222);
+}
+
+.cardss-two-five {
+    border-bottom: solid 5px rgb(237, 174, 58);
+}
+
+.cardss-four {
+    border-bottom: solid 5px skyblue;
+}
+
+.cardss img {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.cardss p {
+    opacity: 0.6;
+}
+/* about history section ends */
+
+
+
+
+
+/* review section starts */
+body {
+    justify-content: center;
+}
+  
+  .bo-to-three_side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 80px;
+    background-color: black;
+    color: #fff;
+  }
+  
+  .testimonial-carousel {
+    position: relative;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  .testimonial-item {
+    display: none;
+    transition: opacity 0.5s ease;
+  }
+  
+  .testimonial-item.active {
+    display: block;
+  }
+  
+  .testimonial-item p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .testimonial-item h3 {
+    font-size: 20px;
+    color: #007BFF;
+  }
+  
+  .dots {
+    text-align: end;
+    margin-top: 20px;
+    max-width: 80%;
+  }
+  
+  .dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.733);
+  }
+  
+  .dot.active {
+    background-color: rgb(23, 188, 253);
+    border: 2px solid gray;
+  }
+  
+  .photo-one{
+    display: flex;
+    padding-top: 10px;
+  }
+  
+  .side-details {
+    padding-left: 20px;
+  }
+  
+  .bo-to-three_desc {
+    padding-top: 25px; 
+  }
+  
+  
+  .bo-to-three_desc h5{
+    font-size: 16px;
+    color: blue;
+  }
+  
+  .bo-to-three_desc h1 {
+    font-size: 40px;    
+  }
+  
+  .image-para p{
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.8;
+  }
+  
+  
+/* review section ends */
+
+
+
+
+/* review section starts  starts */
+.bo-to-two{
+    background-color: black;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+    line-height: 1;
+}
+
+.bo-to-two h1 {
+    font-size: 30px;
+}
+
+.bo-to-two li {
+    font-size: 16px;
+    opacity: 0.6;
+    line-height: 1.6;
+}
+
+.bo-to-two p{
+    font-size: x-large;
+    color: orange;    
+}
+
+
+.bo-to-two button {
+    background:linear-gradient(90deg, blue, skyblue, blue);
+    font-size: 1rem;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 30px;
+    border-width: 0px;
+}
+
+.bo-to-two button:hover{
+    background-color: skyblue;
+    color: chocolate;
+}
+
+/* review section starts  ends */
+
+
+
+/* contact details starts */
+
+.bot-last-info{
+    display: flex;
+    justify-content: center;
+    opacity: 0.8;
+    padding-top: 20px;
+}
+
+.bot-last-info ul li a{
+    font-size: 20px;
+}
+
+.bot-last-info ul {
+    font-size: 16px;
+    padding: 20px;
+
+}
+
+.bot-last {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+}
+
+.bot-last-image{
+    border-bottom: solid 1px lightslategray;
+    padding-bottom: 50px; 
+}
+
+
+.image {
+    padding: 10px;
+}
+
+.bot-to-last ul{
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    
+}
+
+.bot-to-last ul li{
+    padding: 10px;
+    opacity: 0.7;
+}
+
+.last-one-desc p{
+    font-size: 16px;
+}
+
+.last-one-desc div p{
+    font-size: 17px;
+    opacity: 0.8;
+}
+
+/* contact details ends */

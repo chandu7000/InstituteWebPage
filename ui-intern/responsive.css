@@ -1,0 +1,233 @@
+@media only screen and (max-width: 767px) {
+
+    .topbar {
+        flex-direction: column;
+        text-align: center;
+        justify-content: none;
+    }
+
+    
+    .card {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .card_image img{
+        width: 100%;
+    }
+
+    
+    .about_image img {
+        width: 100%;
+    }
+
+    .about_image {
+        margin-top: 20px;
+        margin-left: 0px;
+        background-size: 150px;
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 25px;
+    }
+
+    .courses {
+        background-color: black;
+        color: #fff;
+        justify-content: center;
+    }
+
+    .mid_line {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .card_section {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 15px 10px 30px 10px;
+    }
+    
+
+    .whychoose {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+    .card_color {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+        padding-left: 50px; 
+        width: 50%; 
+    }
+
+
+    .card_descript {
+        width: 45%;
+    }
+
+
+    .cards {
+        padding: 20px 10px;
+        width: 50%;
+        border-width: 0px;
+    }
+
+
+    .bo-to-three {
+        background-color: black;
+        color: #fff;      
+    }
+
+    .bo-to-three_side {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .bo-to-two{
+        background-color: black;
+        color: #fff;
+        line-height: 1;
+    }
+
+    .bot-last {
+        background-color: black;
+        color: #fff;
+        text-align: center;
+      
+    }
+
+    .bot-last-image{
+        border-bottom: solid 1px lightslategray;
+        padding-bottom: 30px; 
+    }
+
+    .bot-last-info {
+        flex-direction: column;
+    }
+
+
+}
+
+
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+    .topbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card_image img{
+        width: 100%;
+    }
+
+    .about_image img {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .about_image {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 25px;
+        
+    }
+
+    .about_d {
+        width: 100%;
+    }
+
+    .courses {
+        background-color: black;
+        padding: 10px;
+        color: #fff;
+        padding-left: 50px;
+    }
+
+
+
+    .card_section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        
+    }
+
+    .whychoose {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 30px;
+    }
+
+
+    .card_color {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 40px;
+        padding-left: 50px; 
+        width: 50%; 
+    }
+
+
+    .card_descript {
+        width: 45%;
+    }
+
+
+    .cards {
+        padding: 20px 10px 20px 10px;
+        width: 50%;
+        border-width: 0px;
+    }
+
+
+    .bo-to-three {
+        background-color: black;
+        padding: 10px;
+        color: #fff;
+    }
+
+
+    .bo-to-two{
+        background-color: black;
+        color: #fff;
+        padding: 70px 10px 70px 10px;
+        line-height: 1;
+    }
+
+    .bot-last {
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        padding: 70px 10px 70px 10px;
+       
+    }
+
+    .bot-last-image{
+        border-bottom: solid 1px lightslategray;
+        padding-bottom: 30px; 
+    }
+
+
+}
